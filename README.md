@@ -8,7 +8,7 @@ Also, it's >6k lines 😳 probably due to all the node.js polyfills. It suits my
 
 ```js
 import CSV from "https://deno.land/x/deno_csv_string@v0.0.2/mod.js";
-const arr = CSV.parse('a,b,c\na,b,c');
+const arr = CSV.parse('a,b,c\na,b,c', ','); // second argument is the separator. CSV.parse returns an array or rows
 const str = CSV.stringify(arr);
 ```
 
